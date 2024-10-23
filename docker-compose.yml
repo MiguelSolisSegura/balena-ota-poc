@@ -2,8 +2,6 @@ version: '2'
 services:
   webserver:
     build: ./simple-app
-    ports:
-      - "8080:8080"
     restart: always
     privileged: true
   wifi-connect:

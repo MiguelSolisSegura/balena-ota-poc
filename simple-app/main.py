@@ -1,10 +1,8 @@
-from flask import Flask
+import time
 
-app = Flask(__name__)
+print("Hello from your Balena deployment!")
 
-@app.route('/')
-def hello():
-    return "Hello, your Balena deployment is working on port 8080!"
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+# Infinite loop to keep the application running
+while True:
+    print("Application is still running...")
+    time.sleep(10)
