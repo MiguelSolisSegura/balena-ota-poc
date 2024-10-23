@@ -1,9 +1,7 @@
 on:
- pull_request:
-    types: [opened, synchronize, closed]
+  push:
     branches:
       - main
-      - master
 
 jobs:
   balena_cloud_build:
