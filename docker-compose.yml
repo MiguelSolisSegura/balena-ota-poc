@@ -1,9 +1,11 @@
 version: '2'
 services:
-  hello-world:
-    build: ./balena-nodejs-hello-world
+  webserver:
+    build: ./simple-app
     ports:
-      - 3000:80
+      - "8080:8080"
+    restart: always
+    privileged: true
   wifi-connect:
     build: ./wifi-connect
     network_mode: "host"
