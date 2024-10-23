@@ -1,9 +1,9 @@
 version: '2'
 services:
-  hello-world:
-    build: ./balena-nodejs-hello-world
-    ports:
-      - 3000:80
+  #hello-world:
+  #  build: ./balena-nodejs-hello-world
+  #  ports:
+  #    - 3000:80
   wifi-connect:
     build: ./wifi-connect
     network_mode: "host"
